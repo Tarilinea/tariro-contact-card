@@ -26,6 +26,43 @@ a{color:var(--ink);text-decoration:none;overflow-wrap:anywhere}
 .primary{background:var(--navy);color:white}
 .secondary{border:1px solid #d5dce5;color:var(--navy)}
 footer{text-align:center;padding:0 20px 23px;color:#8993a2;font-size:11px}
+  .save-contact-person {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #D6B45D;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at 15% 15%, #D6B45D 0 3px, transparent 4px),
+    radial-gradient(circle at 85% 20%, #397A91 0 5px, transparent 6px),
+    radial-gradient(circle at 80% 85%, #8A6BB5 0 4px, transparent 5px),
+    #10213A;
+  transition: transform 0.2s ease;
+}
+
+.save-contact-person svg {
+  width: 65px;
+  height: 65px;
+  color: #D6B45D;
+}
+
+.save-contact-person span {
+  color: #000000;
+  font-weight: 700;
+  font-size: 14px;
+  background: #D6B45D;
+  padding: 7px 14px;
+  border-radius: 20px;
+}
+
+.save-contact-person:hover {
+  transform: scale(1.06);
+}
+  
 </style>
 </head>
 <body>

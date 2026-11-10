@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#172b46">
+<title>Tariro L. Chirombe | Digital Contact Card</title>
+<style>
+:root{--navy:#172b46;--gold:#b99a5b;--ink:#243247;--muted:#64748b;--paper:#f4f6f9}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--paper);font-family:Arial,Helvetica,sans-serif;color:var(--ink);display:grid;place-items:center;padding:24px}
+.card{width:min(100%,440px);background:white;border-radius:22px;overflow:hidden;box-shadow:0 18px 55px rgba(23,43,70,.13)}
+header{background:var(--navy);color:white;text-align:center;padding:38px 24px 30px;border-bottom:4px solid var(--gold)}
+.monogram{width:76px;height:76px;border:1px solid rgba(255,255,255,.5);border-radius:50%;display:grid;place-items:center;margin:0 auto 18px;font-family:Georgia,serif;font-size:25px;letter-spacing:2px;color:#fff}
+h1{font-size:25px;margin:0 0 8px;font-weight:600;letter-spacing:.2px}
+.subtitle{margin:0;color:#d8e0ea;font-size:13px;letter-spacing:1.3px;text-transform:uppercase}
+main{padding:26px}
+.details{display:grid;gap:17px;margin-bottom:25px}
+.item{display:flex;gap:13px;align-items:center}
+.symbol{width:38px;height:38px;border-radius:11px;background:#eef2f6;color:var(--navy);display:grid;place-items:center;font-size:17px;flex:none}
+a{color:var(--ink);text-decoration:none;overflow-wrap:anywhere}
+.small{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.value{font-size:14px}
+.actions{display:grid;gap:11px}
+.btn{display:block;text-align:center;padding:14px 16px;border-radius:10px;font-weight:600;font-size:14px}
+.primary{background:var(--navy);color:white}
+.secondary{border:1px solid #d5dce5;color:var(--navy)}
+footer{text-align:center;padding:0 20px 23px;color:#8993a2;font-size:11px}
+</style>
+</head>
+<body>
+<article class="card">
+<header>
+  <div class="monogram">TC</div>
+  <h1>Tariro L. Chirombe</h1>
+  <p class="subtitle">Digital Contact Card</p>
+</header>
+<main>
+  <section class="details">
+    <div class="item"><div class="symbol">☎</div><div><div class="small">Phone</div><a class="value" href="tel:+260768232740">+260 768 232 740</a></div></div>
+    <div class="item"><div class="symbol">✉</div><div><div class="small">Email</div><a class="value" href="mailto:chirombetariro45@gmail.com">chirombetariro45@gmail.com</a></div></div>
+    <div class="item"><div class="symbol">in</div><div><div class="small">LinkedIn</div><a class="value" href="https://www.linkedin.com/in/tariro-chirombe-ba6011207/" target="_blank" rel="noopener">linkedin.com/in/tariro-chirombe-ba6011207</a></div></div>
+  </section>
+  <section class="actions">
+    <a class="btn primary" href="tariro-chirombe.vcf" download>＋ Save Contact</a>
+    <a class="btn secondary" href="tel:+260768232740">Call</a>
+    <a class="btn secondary" href="mailto:chirombetariro45@gmail.com">Send Email</a>
+  </section>
+</main>
+<footer>Scan • Connect • Save</footer>
+</article>
+</body>
+</html>
